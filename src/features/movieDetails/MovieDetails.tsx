@@ -22,6 +22,7 @@ const MovieDetails = () => {
 
   return (
     <div>
+      <h3>Check out the deets on this flick</h3>
       <h2>{selectedMovie?.Title}</h2>
       <p>{selectedMovie?.Plot}</p>
       <p>Director: {selectedMovie?.Director}</p>

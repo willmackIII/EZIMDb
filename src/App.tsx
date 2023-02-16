@@ -8,10 +8,12 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      {/* <Route path="/test" render={() => <div>Test Route</div>} /> */}
         <Switch>
-          <Route path="/movie-details/:imdbID" component={MovieDetails} />
           <Route exact path="/" component={Search} />
+          <Route path="/movie-details/:imdbID" component={MovieDetails} />
+          {/* <Route path='/movie-details/:imdbID' render={(props) => {
+            return ( <MovieDetails {...props} /> )
+          }} /> */}
         </Switch>
       </BrowserRouter>
     </div>
